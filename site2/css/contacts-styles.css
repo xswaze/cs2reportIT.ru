@@ -1,0 +1,77 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    background: #7f9ab3 url('file:///C:/Users/User/Desktop/site2/image/wallpaper.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+/* Добавляем стили для адаптивности изображения */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.index-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.main-description {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.submit-report {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-report:hover {
+    background-color: #4CAF50;
+}
+
+.inner-page {
+    color: #ffffff;
+}
+
+.inner-page h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.inner-page main {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.inner-page button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inner-page button:hover {
+    background-color: #4CAF50;
+}

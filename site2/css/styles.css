@@ -1,0 +1,61 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    background: #7f9ab3 url('file:///C:/Users/User/Desktop/site2/image/wallpaper.jpg') center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для телефонов (максимальная ширина 767px) */
+@media screen and (max-width: 767px) {
+    /* Ваши стили для мобильных устройств */
+}
+
+/* Стили для ноутбуков и планшетов (ширина от 768px до 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Ваши стили для ноутбуков и планшетов */
+}
+
+/* Стили для компьютеров (ширина больше 1024px) */
+@media screen and (min-width: 1025px) {
+    /* Ваши стили для компьютеров */
+}
+/* Добавляем стили для адаптивности изображения */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.index-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.main-description {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.submit-report {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-report:hover {
+    background-color: #4CAF50;
+}

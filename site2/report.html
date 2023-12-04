@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/report-styles.css">
+    <title>Подать репорт</title>
+</head>
+<body class="inner-page">
+    <header>
+        <h1 class="report-title">Подать репорт</h1>
+    </header>
+    <main>
+        <form action="https://formspree.io/f/xbjvvnap" method="POST">
+            <label for="steamID">Steam ID игрока или ссылка на профиль:</label>
+            <input type="text" id="steamID" name="steamID" required>
+
+            <label for="cheatType">Тип читов:</label>
+            <select id="cheatType" name="cheatType" required>
+                <option value="aimbot">Aimbot</option>
+                <option value="wallhack">Wallhack</option>
+                <option value="aim+wh">Aim+Wh</option>
+            </select><br>
+            <label for="situation">Опишите ситуацию:</label>
+            <textarea id="situation" name="situation" rows="8" cols="50" required></textarea>
+
+            <label for="evidence">Прикрепите доказательства (картинка, видео):</label>
+            <input type="file" id="evidence" name="evidence" accept="image/*,video/*"><br>
+
+            <button type="submit">Отправить отчет</button>
+        </form>
+    </main>
+    <footer>
+        <p>Вернуться на <a href="index.html">главную страницу</a></p>
+    </footer>
+    <!-- Админская кнопка -->
+    <a href="https://formspree.io/forms/xbjvvnap/submissions" class="admin-button" style="position: fixed; bottom: 20px; right: 20px; background-color: #fffff; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: none;">Админ</a>
+
+    <script>
+        // Отобразить админскую кнопку после загрузки страницы
+        window.addEventListener('DOMContentLoaded', function() {
+            var adminButton = document.querySelector('.admin-button');
+            adminButton.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

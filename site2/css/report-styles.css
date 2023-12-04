@@ -1,0 +1,82 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    background: #7f9ab3 url('file:///C:/Users/User/Desktop/site2/image/wallpaper.jpg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Добавляем стили для адаптивности изображения */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.report-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.inner-page main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Ширина формы в отношении к ширине страницы */
+    margin: auto; /* Центрирование формы */
+    background-color: #fffff; /* Красный цвет фона */
+    padding: 20px; /* Внутренний отступ */
+    border-radius: 10px; /* Радиус углов для рамки */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для подчеркивания рамки */
+}
+
+.report-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.inner-page label {
+    margin-bottom: 10px;
+}
+
+.inner-page input[type="text"],
+.inner-page textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px; /* Задаем радиус для овальных полей */
+    background: linear-gradient(45deg, #404040, #303030); /* Градиент */
+    color: #ffffff;
+}
+
+.inner-page textarea {
+    resize: none; /* Запрещаем изменение размера textarea пользователем */
+    height: 160px; /* Устанавливаем высоту textarea */
+}
+
+.inner-page button {
+    width: 150px; /* Ширина кнопки в пикселях */
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px; /* Задаем радиус для овальной кнопки */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inner-page button:hover {
+    background-color: #4CAF50; /* Зеленый цвет при наведении */
+}
+
+footer {
+    margin-top: 20px;
+}
